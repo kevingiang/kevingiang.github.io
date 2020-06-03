@@ -8,16 +8,32 @@ body {
   color: #5a5a5a;
 }
 
+footer{
+  display:block;
+}
 
 
-/* NAVBAR STYLES
+a:hover{
+  text-decoration: none;
+}
+
+
+/* COLOR & FONT STYLES
 -------------------------------------------------- */
-.navbar-brand, .nav-item .active, .featurette-heading, .back-to-top a{
+.navbar-brand, .nav-item .active, .featurette-heading, .footer-link a, .featurette-icons a, a{
   color:#002163;
 }
 
 .navbar-brand{
   font-family: 'Overpass', sans-serif;
+}
+
+
+/* IFRAME STYLES
+-------------------------------------------------- */
+
+.embed-responsive-item{
+  width: 100%;
 }
 
 
@@ -89,6 +105,11 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+}
+
+.featurette-icons{
+  line-height: 1;
+  letter-spacing: 2rem;
 }
 
 

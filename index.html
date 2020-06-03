@@ -15,8 +15,13 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba518bdf59.js" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
   </head>
   <body>
+    <!-- Facebook Embed -->
+    <div id="fb-root"></div>
+    
 
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -59,7 +64,7 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <h2>Auto detailing services tailored to your needs.</h2>
-                <p>Ceramic coatings, hydrophobic glass coatings, and steam cleaning services all at your home.</p>
+                <p>Various interior and exterior services and regular maintenance packages are available.</p>
                 <p><a class="btn btn-lg btn-light" href="/services.html" role="button">See Services</a></p>
               </div>
             </div>
@@ -75,7 +80,7 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <h2>Schedule an appointment today!</h2>
-                <p>Book a spot in advance for my services.</p>
+                <p>Request a quote or book services in advance.</p>
                 <p><a class="btn btn-lg btn-light" href="/contact.html" role="button">Contact Me</a></p>
               </div>
             </div>
@@ -101,15 +106,13 @@
 
         <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
+        <div class="row featurette mt-5">
+          <div class="col-md-7 mt-5">
             <h2 class="featurette-heading">Let me know what your car needs.</h2>
             <p class="lead">I have recently left my position as detailer for a well-respected German repair shop in pursuit of starting my own business offering mobile detailing services in the greater Philadelphia area.</p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="photo of u">
+          <div class="col-md-5 mt-5">
+            <img class="featurette-image img-fluid mx-auto" src="/images/kevin.jpg" alt="Kevin's photo">
           </div>
         </div>
 
@@ -118,25 +121,26 @@
         <div class="row featurette justify-content-center">
           <div class="col-md-7">
             <h2 class="featurette-heading text-center">Quality work is my priority.</h2>
-            <p class="lead text-center">I have completed over X number jobs in my community. See testimonials from some of my satisfied customers' on Facebook Reviews and Google Reviews.</p>
+            <p class="lead text-center">I have completed over X number jobs in my community. See testimonials from some of my satisfied customers' on <a href="https://www.facebook.com/detailsbykevingiang/reviews/" target="_blank">Facebook Reviews</a> and <a href="https://www.google.com/search?q=Detailing+by+Kevin+Giang,+North+Wales,+PA+19454&ludocid=325669328760916713#lrd=0x89c6a32a793afc1d:0x48502876f08cae9,1" target="_blank">Google Reviews</a>.</p>
           </div>
         </div>
 
         <div class="fb-reviews m-5">
-          <div class="row justify-content-around">
+          <div class="row justify-content-around mb-3">
             <div class="col-">
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frebecca.crock%2Fposts%2F10220131815258577&width=500" width="500" height="199" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <div class="fb-post" data-href="https://www.facebook.com/rebecca.crock/posts/10220131815258577" data-show-text="true" data-width="420"></div>
             </div>
             <div class="col-">
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fericbzhou%2Fposts%2F2198819116822504&width=500" width="500" height="199" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              <div class="fb-post" data-href="https://www.facebook.com/ericbzhou/posts/2198819116822504" data-show-text="true" data-width="420"></div>
             </div>
           </div>
+
           <div class="row justify-content-around">
             <div class="col-">
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fryan.fernandez.399%2Fposts%2F2599613770156286&width=500" width="500" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              <div class="fb-post" data-href="https://www.facebook.com/ryan.fernandez.399/posts/2599613770156286" data-show-text="true" data-width="420"></div>
             </div>
             <div class="col-">
-             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjohn.capra.96%2Fposts%2F2762065423872961&width=500" width="500" height="161" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              <div class="fb-post" data-href="https://www.facebook.com/john.capra.96/posts/2762065423872961" data-show-text="true" data-width="420"></div>
             </div>
           </div>
         
@@ -163,6 +167,14 @@
           <div class="col-md-7">
             <h2 class="featurette-heading text-center">Watch me work.</h2>
             <p class="lead text-center">Preview the techniques and products I use to clean and care for your car.</p>
+            <h3 class="featurette-icons text-center mt-3">
+              <a href="https://www.instagram.com/details_by_kevin/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/detailsbykevingiang/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </h3>
           </div>
         </div>
 
@@ -193,9 +205,22 @@
 
 
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right back-to-top"><a href="/">Back to top</a></p>
-      </footer>
+        <footer class="container">
+          <div class="container-fluid">
+            <div class="float-left mb-5">
+              <p class='footer-link'>Details by Kevin<br />
+              <a href="mailto:detailsbykevingiang@gmail.com">detailsbykevingiang@gmail.com</a><br />
+              <a href="https://www.instagram.com/details_by_kevin/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/detailsbykevingiang/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </p>
+            </div>
+            <p class="float-right footer-link"><a href="/">Back to top</a></p>
+          </div>
+        </footer>
     </main>
 
     <!-- Optional JavaScript -->
