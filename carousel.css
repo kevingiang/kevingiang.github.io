@@ -20,12 +20,16 @@ a:hover{
 
 /* COLOR & FONT STYLES
 -------------------------------------------------- */
-.navbar-brand, .nav-item .active, .featurette-heading, .footer-link a, .featurette-icons a, a{
+.navbar-brand, .nav-item .active, .featurette-heading, .footer-link a, .featurette-icons a, a, .card-title{
   color:#002163;
 }
 
 .navbar-brand{
   font-family: 'Overpass', sans-serif;
+}
+
+.table {
+  color:#5a5a5a;
 }
 
 
