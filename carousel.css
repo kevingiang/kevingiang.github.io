@@ -41,7 +41,6 @@ a:hover{
 }
 
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -138,3 +137,10 @@ a:hover{
     margin-top: 7rem;
   }
 }
+
+/*@media (max-width: 400px){
+  .fb-reviews {
+    width:50%;
+  }
+}*/
+
