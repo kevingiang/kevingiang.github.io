@@ -70,7 +70,14 @@ a:hover{
   height:40%;
 }
 
-.carousel-overlay {
+/* IMAGE OVERLAY STYLING
+-------------------------------------------------- */
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-overlay {
   position: absolute;
   top: 0;
   width: 100%;
@@ -78,6 +85,11 @@ a:hover{
   background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
 }
 
+/* SERVICE CARDS
+-------------------------------------------------- */
+.card-body{
+  position:relative;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
