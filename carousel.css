@@ -24,6 +24,11 @@ a:hover{
   color:#002163;
 }
 
+.btn-secondary{
+  background-color: #002163;
+  border-color: #002163; 
+}
+
 .navbar-brand{
   font-family: 'Overpass', sans-serif;
 }
