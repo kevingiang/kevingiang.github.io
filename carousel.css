@@ -17,6 +17,13 @@ a:hover{
   text-decoration: none;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 
 /* COLOR & FONT STYLES
 -------------------------------------------------- */
